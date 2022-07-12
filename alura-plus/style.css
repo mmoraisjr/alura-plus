@@ -1,0 +1,154 @@
+:root {
+    --branco-primario: #ffffff;
+    --cinza-secundario: #C0C0C0;
+    --azul-botao: #167BF7;
+    --preto-fundo: #00030C;
+    --fonte-principal: 'Inter'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--preto-fundo);
+    color: var(--branco-primario);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal {
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.principal__caixa {
+    margin: 0 6rem;
+}
+
+.principal__titulo {
+    font-size: 1.75rem;
+
+}
+
+.principal__imagem {
+    margin: 1rem 0 2rem 0;
+}
+
+.principal__botao {
+    display: block;
+    background-color: var(--azul-botao);
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--branco-primario);
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.principal__botao:hover {
+    color:#00030C;
+}
+
+.principal_assinealura {
+    background-color: transparent;
+    border: var(--branco-primario) solid 2px;
+}
+
+.principal_assinealura:hover {
+    background: #167BF7;
+}
+
+.principal__aviso {
+    font-size: .75rem;
+    color: var(--cinza-secundario);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.secundario__imagem {
+    width: 65%;
+    padding: 0 6rem;
+}
+
+.secundario__descricao {
+    padding: 2rem;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: .2rem;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.dispositivos {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.dispositivos__icone {
+    display: grid;
+    height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.dispositivos__titulo {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.rodape {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--cinza-secundario);
+    margin: 0 10rem;
+}
+
+.rodape__logo {
+    margin-bottom: 1.5rem;
+}
+
+.rodape__opcoes {
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: var(--branco-primario);
+}
+
+.rodape a:hover {
+    color: var(--cinza-secundario);
+}
+
+.rodape a:active {
+    color: var(--azul-botao);
+}
+
+.rodape__texto {
+    padding-bottom: 2rem;
+    font-size: .8rem;
+}
